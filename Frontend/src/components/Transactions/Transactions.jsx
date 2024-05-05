@@ -24,7 +24,7 @@ export default function Transactions() {
 
   const fetchData = async () => {
     try {
-      let url = `http://localhost:3001/api/transactions?search=${search}&page=${currentPage}`;
+      let url = `https://roxiler-huth.onrender.com/api/transactions?search=${search}&page=${currentPage}`;
 
       if (selectedMonth) {
         url += `&month=${selectedMonth}`;
